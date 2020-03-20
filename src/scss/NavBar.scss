@@ -1,0 +1,17 @@
+.top-nav {
+  background-color: #212121;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 45px;
+  .nav-link {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.6rem;
+    &:hover {
+      color: rgb(0, 153, 255);
+    }
+  }
+}

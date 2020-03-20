@@ -1,25 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// REACT
+import React from "react";
+
+// COMPONENTS
+import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
+import { TaskProvider } from "./context/TaskContext";
+import TaskList from "./components/tasks/TaskList";
+import AddTask from "./components/tasks/AddTask";
+
+// STYLING
+import styled from "styled-components";
+import "./App.css";
+
+const AppDiv = styled.div`
+  text-align: center;
+`;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppDiv>
+      <TaskProvider>
+        <NavBar />
+        <Footer />
+      </TaskProvider>
+    </AppDiv>
   );
 }
 

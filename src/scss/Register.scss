@@ -1,0 +1,32 @@
+.register-page {
+  background: url("../images/Hero.jpg") center;
+  height: 100vh;
+}
+.clear-form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 200px;
+  input {
+    padding: 10px;
+    font-size: 1.6rem;
+    margin-top: 10px;
+    background: rgba(255, 255, 255, 0.5);
+  }
+  button {
+    padding: 10px;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 2px solid white;
+    font-weight: bold;
+    font-size: 1rem;
+    &:hover {
+      background-color: #212121;
+      color: white;
+      cursor: pointer;
+    }
+  }
+}

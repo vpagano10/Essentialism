@@ -1,0 +1,17 @@
+.pillars-container {
+  font-size: 1.8rem;
+  .pillar-counter {
+    background-color: green;
+  }
+  .top-pillars {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    width: 900px;
+    .pillar {
+      width: 450px;
+      height: 45px;
+    }
+  }
+}

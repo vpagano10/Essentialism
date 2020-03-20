@@ -1,0 +1,67 @@
+.account-container {
+  font-size: 1.8rem;
+  .pillar-container {
+    display: flex;
+    justify-content: space-evenly;
+    span {
+      width: 300px;
+      text-align: left;
+    }
+    .top-pillar {
+      background-color: khaki;
+      font-weight: bold;
+    }
+    .pillar-options {
+      display: flex;
+      justify-content: space-evenly;
+      p {
+        padding: 0 5px;
+        &:hover {
+          cursor: pointer;
+        }
+        .edit-link {
+          text-decoration: none;
+          color: black;
+          transition: 0.25s ease;
+          font-weight: 500;
+          &:hover {
+            color: rgb(0, 153, 255);
+          }
+        }
+      }
+    }
+  }
+  .prompt-container {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+    .textareas {
+      width: 500px;
+      height: 350px;
+      font-size: 2rem;
+      border: 2px solid #212121;
+      border-radius: 5px;
+      padding-left: 10px;
+      padding-right: 10px;
+      background-color: rgba(70, 131, 180, 0.25);
+    }
+    .prompt-buttons {
+      display: flex;
+      justify-content: space-between;
+      p {
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      .edit-link {
+        text-decoration: none;
+        color: black;
+        transition: 0.25s ease;
+        font-weight: 500;
+        &:hover {
+          color: rgb(0, 153, 255);
+        }
+      }
+    }
+  }
+}
