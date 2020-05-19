@@ -5,9 +5,11 @@
   .task-form {
     input {
       width: 250px;
-      padding: 15px 0;
+      padding: 15px 5px;
       margin-top: 10px;
       font-size: 1.6rem;
+      border-radius: 5px;
+      border: 2px solid #212121;
     }
     button {
       margin-top: 30px;
